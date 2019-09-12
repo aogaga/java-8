@@ -1,8 +1,12 @@
+import coreval.CoreVal;
+import coreval.Developer;
+
 import java.util.List;
 
 public class SortingWithLambda {
     public static void  main(String [] args){
-        List<Developer> developerList = Developer.getDevelopers();
+
+        List<Developer> developerList = CoreVal.getDevelopers();
 
         System.out.println("before sort");
 
@@ -10,13 +14,13 @@ public class SortingWithLambda {
             System.out.println(d.toString());
         }
 
-        System.out.println("=======================================================");
+        System.out.println("========== =============================================");
         System.out.println("After sort");
 
         //sorting with lamda expressions
 
 
-        sortByName(developerList);
+//        sortByName(developerList);
 
         sortBySalary(developerList);
 
@@ -26,6 +30,9 @@ public class SortingWithLambda {
 
     }
 
+    private void letFocusNow(){
+        System.out.println()
+    }
     private static void sortBySalary(List<Developer> developerList) {
         developerList.sort((Developer x, Developer y)-> x.getSalary().compareTo(y.getSalary()));
     }

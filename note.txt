@@ -1,0 +1,5 @@
+1. () => 5 // take no parameter but returns 5
+2. x -> 2 * x // takes a number and return the result of doubling that number
+3. (x, y) -> x -y // takes two numbers and returns the difference
+4. (int x, int y) -> x + y; // takes two integers and return their sum
+5. (String s) -> System.out.print(s) /// take a number and prints it out

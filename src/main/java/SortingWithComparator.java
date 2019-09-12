@@ -1,5 +1,6 @@
-import java.math.BigDecimal;
-import java.util.ArrayList;
+import coreval.CoreVal;
+import coreval.Developer;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
 public class SortingWithComparator {
 
     public static  void main(String [] args){
-        List<Developer> developerList = Developer.getDevelopers();
+        List<Developer> developerList = CoreVal.getDevelopers();
 
         System.out.println("before sort");
 
